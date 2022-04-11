@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    /* Image, radio buttons*/
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+[hidden] {
+    display: none;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body>* {
+    margin-top: 200px;
+}
+
+.card {
+    background-color: var(--VeryDarkBlue);
+    border-radius: 20px;
+    width: 420px;
+    height: 420px;
+    padding: 30px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rating .photo {
+    background-color: var(--DarkBlue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.card p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.radio-toolbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--DarkBlue);
+    cursor: pointer;
+    color: var(--MediumGrey);
+    font-weight: 400;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: var(--LightGrey);
+    color: var(--White);
+    cursor: default;
+}
+
+.radio-toolbar input[type="radio"]:hover+label {
+    background-color: var(--orange);
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card button {
+    all: unset;
+    background-color: var(--orange);
+    color: white;
+    width: 100%;
+    height: 45px;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.card button:hover {
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.result {
+    background-color: var(--DarkBlue);
+    color: var(--orange);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:376px) {}

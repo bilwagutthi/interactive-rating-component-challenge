@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: white;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Rating state start -->
+        <div id="rateCard">
+            <div class="card rating">
+                <div class="photo"><img src="images/icon-star.svg" alt="star"></div>
+                <h1>How did we do?</h1>
+
+                <p> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+                <div class="radio-toolbar">
+                    <input type="radio" name="rating" id="rate1" value="1">
+                    <label for="rate1">1</label>
+                    <input type="radio" name="rating" id="rate2" value="2">
+                    <label for="rate2">2</label>
+                    <input type="radio" name="rating" id="rate3" value="3">
+                    <label for="rate3">3</label>
+                    <input type="radio" name="rating" id="rate4" value="4">
+                    <label for="rate4">4</label>
+                    <input type="radio" name="rating" id="rate5" value="5">
+                    <label for="rate5">5</label>
+                </div>
+                <button type="button" id="submit"> Submit</button>
+
+            </div>
+        </div>
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+        <div id="resultCard">
+            <div class="card thanks">
+                <div class="photo"><img src="images/illustration-thank-you.svg" alt=""></div>
+                <div class="result">
+                    You selected out of 5</div>
+                <h1>Thank you!</h1>
+                <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+        </div>
+        <!-- Thank you state end -->
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/bilwagutthi">Bilwa Gutthi</a>.
+        </div>
+    </footer>
+</body>
+
+</html>
